@@ -1,1 +1,36 @@
+plugins {
+    id 'com.android.application'
+}
 
+android {
+    namespace 'com.example.ndkdemo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.ndkdemo"
+        minSdk 21
+        targetSdk 34
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
