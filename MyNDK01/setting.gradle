@@ -1,1 +1,2 @@
-a
+rootProject.name = "android-ndkdemo"
+include ':app'
