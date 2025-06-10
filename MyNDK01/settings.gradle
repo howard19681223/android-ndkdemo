@@ -1,2 +1,2 @@
-rootProject.name = "android-ndkdemo"
+rootProject.name = "MyNDK01"
 include ':app'
