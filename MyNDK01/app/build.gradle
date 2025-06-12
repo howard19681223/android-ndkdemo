@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.ndkdemo'
+    namespace  'com.example.ndkdemo'
     compileSdk 34
 
     defaultConfig {
